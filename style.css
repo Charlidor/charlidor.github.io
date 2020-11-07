@@ -1,0 +1,305 @@
+/* CSS styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+#canvas-complex {
+    position: absolute;
+    display: block;
+    width: 7%;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+}
+
+#logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6vh;
+    position: absolute;
+    bottom:0px;
+    left:50%;
+    background-color: transparent;
+}
+
+
+
+ul {
+  position: absolute;
+  display: flex;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a .fa {
+  font-size: 2em;
+  color: #222;
+}
+
+ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+ul li:nth-child(1)::before 
+{
+  content: '\f08c';
+  color: #2867B2;
+  border-bottom: 3px solid #2867B2;
+  
+}
+ul li:nth-child(2)::before 
+{
+  content: '\f232'; 
+  color: #6BE992;
+  border-bottom: 3px solid #6BE992;
+  
+}
+ul li:nth-child(3)::before 
+{
+  content: '\f16d';
+  color: #ED3833;
+  border-bottom: 3px solid #ED3833;
+  
+}
+
+ul li:nth-child(4)::before 
+{
+  content: '\f16e';
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+  
+}
+
+ul li:nth-child(5)::before 
+{
+  content: '\f26e';
+  color: #369a98;
+  border-bottom: 3px solid #369a98;
+  
+}
+
+ul li:hover::before {
+  height: 100%;
+}
+
+
+#welcome {
+  color: white;
+  position: absolute;
+  left: 250px;
+  top: 130px;
+  font-family: "Times New Roman", Times, serif;
+ 
+}
+#welcome2 {
+  color: #CE5937;
+  position: absolute;
+  left: 440px;
+  top: 130px;
+  font-family: "Times New Roman", Times, serif;
+  color: #20B2AA;
+ 
+}
+
+#id1 {
+  position: absolute;
+  left: 250px;
+  top: 168px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+#myBtn {
+  position: absolute;
+  left: 280px;
+  top: 300px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#myBtn:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#myBtn:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+#myBtn2 {
+  position: absolute;
+  left: 280px;
+  top: 380px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#myBtn2:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#myBtn2:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+#myBtn3 {
+  position: absolute;
+  left: 280px;
+  top: 420px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#myBtn3:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#myBtn3:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+
+}
+
+#myBtn4 {
+  position: absolute;
+  left: 280px;
+  top: 340px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#myBtn4:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#myBtn4:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+
+}
+
+#demo {
+  position: absolute;
+  left: 560px;
+  top: 300px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  width: 600px;
+  text-align: justify;
+}
+#demo2 {
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
+
+}
+
+#demo3 { 
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
+
+}
+
+#demo4 { 
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
+  width: 600px;
+}
+
+.text {
+  font-family: "Times New Roman", Times, serif;
+}
