@@ -1,4 +1,5 @@
-/* CSS styles */
+/* Overall design of the website */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,28 +7,59 @@
   background-color: black;
 }
 
-#canvas-complex {
-    position: absolute;
-    display: block;
-    width: 7%;
-    height: 100%;
-    top: 0;
-    right: 0;
+/* Animation at the beginning */
 
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.intro-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+/* Animation on the right side of the website */ 
+
+#canvas-complex {
+  position: absolute;
+  display: block;
+  width: 7%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+/* Social media icons and animation */
 
 #logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 6vh;
-    position: absolute;
-    bottom:0px;
-    left:50%;
-    background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6vh;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background-color: transparent;
 }
-
-
 
 ul {
   position: absolute;
@@ -62,48 +94,41 @@ ul li::before {
   pointer-events: none;
 }
 
-ul li:nth-child(1)::before 
-{
+ul li:nth-child(1)::before {
   content: '\f08c';
   color: #2867B2;
   border-bottom: 3px solid #2867B2;
-  
 }
-ul li:nth-child(2)::before 
-{
+
+ul li:nth-child(2)::before {
   content: '\f232'; 
   color: #6BE992;
-  border-bottom: 3px solid #6BE992;
-  
+  border-bottom: 3px solid #6BE992; 
 }
-ul li:nth-child(3)::before 
-{
+
+ul li:nth-child(3)::before {
   content: '\f16d';
   color: #ED3833;
   border-bottom: 3px solid #ED3833;
-  
 }
 
-ul li:nth-child(4)::before 
-{
+ul li:nth-child(4)::before {
   content: '\f16e';
   color: #ffffff;
   border-bottom: 3px solid #ffffff;
-  
 }
 
-ul li:nth-child(5)::before 
-{
+ul li:nth-child(5)::before {
   content: '\f26e';
   color: #369a98;
   border-bottom: 3px solid #369a98;
-  
 }
 
 ul li:hover::before {
   height: 100%;
 }
 
+/* First level of content */
 
 #welcome {
   color: white;
@@ -111,8 +136,8 @@ ul li:hover::before {
   left: 250px;
   top: 130px;
   font-family: "Times New Roman", Times, serif;
- 
 }
+
 #welcome2 {
   color: #CE5937;
   position: absolute;
@@ -120,7 +145,6 @@ ul li:hover::before {
   top: 130px;
   font-family: "Times New Roman", Times, serif;
   color: #20B2AA;
- 
 }
 
 #id1 {
@@ -216,7 +240,6 @@ ul li:hover::before {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   outline: none;
-
 }
 
 #myBtn4 {
@@ -246,8 +269,9 @@ ul li:hover::before {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   outline: none;
-
 }
+
+/* Second level of content */
 
 #demo {
   position: absolute;
@@ -261,6 +285,7 @@ ul li:hover::before {
   width: 600px;
   text-align: justify;
 }
+
 #demo2 {
   position: absolute;
   left: 560px;
@@ -271,7 +296,6 @@ ul li:hover::before {
   border: none;
   background-color: transparent;
   text-align: justify;
-
 }
 
 #demo3 { 
@@ -284,7 +308,6 @@ ul li:hover::before {
   border: none;
   background-color: transparent;
   text-align: justify;
-
 }
 
 #demo4 { 
@@ -298,8 +321,4 @@ ul li:hover::before {
   background-color: transparent;
   text-align: justify;
   width: 600px;
-}
-
-.text {
-  font-family: "Times New Roman", Times, serif;
 }
