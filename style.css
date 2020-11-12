@@ -155,7 +155,7 @@ ul li:hover::before {
   color: white;
 }
 
-#myBtn {
+#button1 {
   position: absolute;
   left: 280px;
   top: 300px;
@@ -167,7 +167,7 @@ ul li:hover::before {
   font-weight: bold;
 } 
 
-#myBtn:hover {
+#button1:hover {
   background-color: transparent;
   border: none;
   color: #20B2AA;
@@ -175,7 +175,7 @@ ul li:hover::before {
   font-weight: bold;
 }
 
-#myBtn:focus {
+#button1:focus {
   background-color: transparent;
   border: black;
   color: #20B2AA;
@@ -184,65 +184,7 @@ ul li:hover::before {
   outline: none;
 }
 
-#myBtn2 {
-  position: absolute;
-  left: 280px;
-  top: 380px;
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  border: none;
-  background-color: transparent;
-  font-weight: bold;
-} 
-
-#myBtn2:hover {
-  background-color: transparent;
-  border: none;
-  color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-}
-
-#myBtn2:focus {
-  background-color: transparent;
-  border: black;
-  color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  outline: none;
-}
-
-#myBtn3 {
-  position: absolute;
-  left: 280px;
-  top: 420px;
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  border: none;
-  background-color: transparent;
-  font-weight: bold;
-} 
-
-#myBtn3:hover {
-  background-color: transparent;
-  border: none;
-  color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-}
-
-#myBtn3:focus {
-  background-color: transparent;
-  border: black;
-  color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  outline: none;
-}
-
-#myBtn4 {
+#button2 {
   position: absolute;
   left: 280px;
   top: 340px;
@@ -254,7 +196,7 @@ ul li:hover::before {
   font-weight: bold;
 } 
 
-#myBtn4:hover {
+#button2:hover {
   background-color: transparent;
   border: none;
   color: #20B2AA;
@@ -262,7 +204,65 @@ ul li:hover::before {
   font-weight: bold;
 }
 
-#myBtn4:focus {
+#button2:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+#button3 {
+  position: absolute;
+  left: 280px;
+  top: 380px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#button3:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#button3:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+#button4 {
+  position: absolute;
+  left: 280px;
+  top: 420px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#button4:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#button4:focus {
   background-color: transparent;
   border: black;
   color: #20B2AA;
@@ -273,7 +273,7 @@ ul li:hover::before {
 
 /* Second level of content */
 
-#demo {
+#content1 {
   position: absolute;
   left: 560px;
   top: 300px;
@@ -286,31 +286,7 @@ ul li:hover::before {
   text-align: justify;
 }
 
-#demo2 {
-  position: absolute;
-  left: 560px;
-  top: 230px;
-  font-size: 18;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  border: none;
-  background-color: transparent;
-  text-align: justify;
-}
-
-#demo3 { 
-  position: absolute;
-  left: 560px;
-  top: 230px;
-  font-size: 18;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  border: none;
-  background-color: transparent;
-  text-align: justify;
-}
-
-#demo4 { 
+#content2 { 
   position: absolute;
   left: 560px;
   top: 230px;
@@ -321,4 +297,28 @@ ul li:hover::before {
   background-color: transparent;
   text-align: justify;
   width: 600px;
+}
+
+#content3 {
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
+}
+
+#content4 { 
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
 }
