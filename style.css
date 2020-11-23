@@ -124,6 +124,12 @@ ul li:nth-child(5)::before {
   border-bottom: 3px solid #369a98;
 }
 
+ul li:nth-child(6)::before {
+  content: '\f167';
+  color: #e52d27;
+  border-bottom: 3px solid #e52d27;
+}
+
 ul li:hover::before {
   height: 100%;
 }
