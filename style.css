@@ -1,114 +1,330 @@
-<!DOCTYPE html>
-<html>
-  <head>
+/* Overall design of the website */
 
-    <title>JBM</title>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* Animation at the beginning */
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  </head>
+.intro-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: white;
+}
 
+.hide {
+  background: black;
+  overflow: hidden;
+}
 
-  <body>
-  	
-  	<h1 id="welcome">Jean-Baptiste</h1>
-  	<h1 id="welcome2">Michaud</h1>
-  	<p id="id1">MD/PhD student</p>
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
 
-  	<button id="button1" onclick="toggleText()">about</button>
-  	<button id="button3" onclick="toggleText2()">diversity</button>
-  	<button id="button4" onclick="toggleText3()">contact</button>
+/* Animation on the right side of the website */ 
 
-  	<p id="content1"></p>     
-  	<p id="content2"></p> 
-  	<p id="content3"></p> 
-  	<p id="content4"></p> 
-    
-	<script>
-      
-      function toggleText() {
-        document.getElementById("content1").innerHTML = "I am a 23-year old medical student in France also studying neuroscience. Fascinated by Charles Nicolle's personality, a French bacteriologist who received the Nobel Prize in Medicine in Normandy, I enrolled in an M.D./Ph.D. program there. <br>\ <br>\ I believe that medicine is like a bicycle: to keep a balance, it must keep moving. The engine of this bike is research that leads to movement by knowledge through the fuel of questioning. <br>\ <br>\ In addition to medicine, I have other passions including the piano, scuba diving, and computer sciences. <br>\ <br>\ Currently, I am a research student at Beth Israel Deaconess Medical Center and Harvard Medical School.";
-      }
+#canvas-complex {
+  position: absolute;
+  display: block;
+  width: 7%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
 
-      function toggleText2() {
-        document.getElementById("content1").innerHTML = "When I studied abroad in an international school in Luxembourg, my friends were from many different countries in the world. We spoke the same language without sharing a common background. However, each person in the classroom brought her perspective to the assignments. We have learned together as including and helping every person. This experience abroad made me realize that diversity makes us better human beings. It marked me forever and fostered my drive to help others. Medicine was the perfect path for this purpose. <br>\ <br>\ To be admitted in the second year of medicine in France, there is a harsh selection that very few people can get through. Those who can afford to take private lessons have a real advantage over the others, left to themselves with little or no mentorship. In my case, in addition to live far away from the university, which was time-consuming, I did not have the guidance I needed at that time for preparing this selection. It was a real struggle for me. Therefore, following my entrance to the second year of medicine, I decided to help other students who shared similar struggles. I volunteered to be the mentor of first-year medical students. This project supported ten underprivileged students to pursue their dream in medicine.";
-      }
+/* Social media icons and animation */
 
-      function toggleText3() {
-        document.getElementById("content1").innerHTML = "Please, feel free to contact me at jmichau4@bidmc.harvard.edu.";
-      }
+#logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6vh;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background-color: transparent;
+}
 
-    </script>
-    
-	<div id="logos">
-		<ul>
-			<li><a href="https://www.linkedin.com/in/jean-baptiste-michaud-/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-			<li><a href="tel:857-234-9861" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-			<li><a href="https://www.instagram.com/charlidore/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-			<li><a href="https://www.flickr.com/photos/187987926@N08" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-			<li><a href="https://500px.com/p/charlwidor" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a></li>
-			<li><a href="https://www.youtube.com/watch?v=QFLV_1ETsEs" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-		</ul>
-	</div>
+ul {
+  position: absolute;
+  display: flex;
+}
 
-	<div class="intro">
-		<div class="intro-text">
-			<h1 class="hide">
-				<span class="text">Everyday</span>
-			</h1>
-			<h1 class="hide">
-				<span class="text">is a miroir</span>
-			</h1>
-			<h1 class="hide">
-				<span class="text">of your</span>
-			</h1>
-			<h1 class="hide">
-				<span class="text" style="color:#20B2AA">life.</span>
-			</h1>
-		</div>
-	</div>
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
 
-	<div class="slider"></div>
+ul li a {
+  text-decoration: none;
+}
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+ul li a .fa {
+  font-size: 2em;
+  color: #222;
+}
 
-	<script src="app.js"></script>
+ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+}
 
-	<div class="bloc-logo">
-		<canvas id="canvas-complex"></canvas>
-	</div>
+ul li:nth-child(1)::before {
+  content: '\f08c';
+  color: #2867B2;
+  border-bottom: 3px solid #2867B2;
+}
 
-	<script src="granim.min.js"></script>
+ul li:nth-child(2)::before {
+  content: '\f232'; 
+  color: #6BE992;
+  border-bottom: 3px solid #6BE992; 
+}
 
-	<script>
-		var granimInstance = new Granim({
-			element: '#canvas-complex',
-			direction: 'left-right',
-			isPausedWhenNotInView: true,
-			states : {
-				"default-state": {
-					gradients: [
-					['#000000','#000000'],
-	                ['#000000','#000000'],
-	                ['#000000','#20B2AA'],
-	                ['#000000','#1ee3d8'],
-	                ['#000000', '#558582'],
-	                ['#000000','#1ee3d8'],
-	                ['#000000', '#558582'],
-	                ['#000000','#1ee3d8'],
-	                ['#000000', '#558582'],
-	                ['#000000','#1ee3d8'],
-	                ['#000000', '#558582'],
-	                ['#000000','#1ee3d8']       
-	                ]
-	            }
-	        }
-	    });
-	</script>
+ul li:nth-child(3)::before {
+  content: '\f16d';
+  color: #ED3833;
+  border-bottom: 3px solid #ED3833;
+}
 
-</body>
-</html>
+ul li:nth-child(4)::before {
+  content: '\f16e';
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+ul li:nth-child(5)::before {
+  content: '\f26e';
+  color: #369a98;
+  border-bottom: 3px solid #369a98;
+}
+
+ul li:nth-child(6)::before {
+  content: '\f167';
+  color: #e52d27;
+  border-bottom: 3px solid #e52d27;
+}
+
+ul li:hover::before {
+  height: 100%;
+}
+
+/* First level of content */
+
+#welcome {
+  color: white;
+  position: absolute;
+  left: 250px;
+  top: 130px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#welcome2 {
+  color: #CE5937;
+  position: absolute;
+  left: 440px;
+  top: 130px;
+  font-family: "Times New Roman", Times, serif;
+  color: #20B2AA;
+}
+
+#id1 {
+  position: absolute;
+  left: 250px;
+  top: 168px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+#button1 {
+  position: absolute;
+  left: 280px;
+  top: 300px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#button1:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#button1:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+#button2 {
+  position: absolute;
+  left: 280px;
+  top: 340px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#button2:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#button2:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+#button3 {
+  position: absolute;
+  left: 280px;
+  top: 340px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#button3:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#button3:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+#button4 {
+  position: absolute;
+  left: 280px;
+  top: 380px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+} 
+
+#button4:hover {
+  background-color: transparent;
+  border: none;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#button4:focus {
+  background-color: transparent;
+  border: black;
+  color: #20B2AA;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  outline: none;
+}
+
+/* Second level of content */
+
+#content1 {
+  position: absolute;
+  left: 560px;
+  top: 300px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  width: 600px;
+  text-align: justify;
+}
+
+#content2 { 
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
+  width: 600px;
+}
+
+#content3 {
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
+}
+
+#content4 { 
+  position: absolute;
+  left: 560px;
+  top: 230px;
+  font-size: 18;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: justify;
+}
