@@ -235,47 +235,7 @@ ul li:hover::before {
   background-color: transparent;
   border: none;
   color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-}
 
-#button3:focus {
-  background-color: transparent;
-  border: black;
-  color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  outline: none;
-}
-
-#button4 {
-  position: absolute;
-  left: 280px;
-  top: 380px;
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  border: none;
-  background-color: transparent;
-  font-weight: bold;
-} 
-
-#button4:hover {
-  background-color: transparent;
-  border: none;
-  color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-}
-
-#button4:focus {
-  background-color: transparent;
-  border: black;
-  color: #20B2AA;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  outline: none;
-}
 
 /* Second level of content */
 
