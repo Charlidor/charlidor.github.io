@@ -108,8 +108,8 @@ ul li:nth-child(2)::before {
 
 ul li:nth-child(3)::before {
   content: '\f16d';
-  color: #ED3833;
-  border-bottom: 3px solid #ED3833;
+  color: #F77737;
+  border-bottom: 3px solid #F77737;
 }
 
 ul li:nth-child(4)::before {
