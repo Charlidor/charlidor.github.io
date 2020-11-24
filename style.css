@@ -222,7 +222,7 @@ ul li:hover::before {
 #button3 {
   position: absolute;
   left: 280px;
-  top: 380px;
+  top: 340px;
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   color: white;
@@ -251,7 +251,7 @@ ul li:hover::before {
 #button4 {
   position: absolute;
   left: 280px;
-  top: 420px;
+  top: 380px;
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   color: white;
