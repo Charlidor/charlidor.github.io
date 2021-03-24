@@ -100,19 +100,19 @@ ul li:nth-child(1)::before {
   border-bottom: 3px solid #2867B2;
 }
 
-ul li:nth-child(4)::before {
+ul li:nth-child(2)::before {
   content: '\f16e';
   color: #ffffff;
   border-bottom: 3px solid #ffffff;
 }
 
-ul li:nth-child(5)::before {
+ul li:nth-child(3)::before {
   content: '\f26e';
   color: #369a98;
   border-bottom: 3px solid #369a98;
 }
 
-ul li:nth-child(6)::before {
+ul li:nth-child(4)::before {
   content: '\f167';
   color: #e52d27;
   border-bottom: 3px solid #e52d27;
