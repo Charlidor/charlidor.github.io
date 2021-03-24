@@ -100,18 +100,6 @@ ul li:nth-child(1)::before {
   border-bottom: 3px solid #2867B2;
 }
 
-ul li:nth-child(2)::before {
-  content: '\f232'; 
-  color: #6BE992;
-  border-bottom: 3px solid #6BE992; 
-}
-
-ul li:nth-child(3)::before {
-  content: '\f16d';
-  color: #F77737;
-  border-bottom: 3px solid #F77737;
-}
-
 ul li:nth-child(4)::before {
   content: '\f16e';
   color: #ffffff;
