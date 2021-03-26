@@ -94,30 +94,7 @@ ul li::before {
   pointer-events: none;
 }
 
-ul li:nth-child(1)::before {
-  content: '\f08c';
-  color: #2867B2;
-  border-bottom: 3px solid #2867B2;
-}
 
-ul li:nth-child(4)::before {
-  content: '\f167';
-  color: #e52d27;
-  border-bottom: 3px solid #e52d27;
-}
-
-
-ul li:nth-child(3)::before {
-  content: '\f26e';
-  color: #369a98;
-  border-bottom: 3px solid #369a98;
-}
-
-ul li:nth-child(4)::before {
-  content: '\f167';
-  color: #e52d27;
-  border-bottom: 3px solid #e52d27;
-}
 
 ul li:hover::before {
   height: 100%;
